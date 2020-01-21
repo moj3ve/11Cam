@@ -1,6 +1,4 @@
 #!/bin/bash
 
-chmod 0755 
-
 cp -R /Library/11Cam/* /System/Library/PrivateFrameworks/CameraUI.framework
 rm -rf /Library/11Cam
