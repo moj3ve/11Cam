@@ -1,0 +1,9 @@
+Package: com.michaelmelita.11cam
+Name: 11Cam
+Depends: mobilesubstrate, preferenceloader
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: iPhone 11 Cam for iOS 13
+Maintainer: Michael Melita
+Author: Michael Melita
+Section: Tweaks
