@@ -5,13 +5,11 @@
 -(BOOL)isCTMSupported {
     return YES;
 }
-%end 
-%hook CAMCaptureCapabilities
+
 -(BOOL)deviceSupportsCTM {
     return YES;
 }
-%end
-%hook CAMCaptureCapabilities
+
 -(BOOL)isCTMSupportSupressed {
     return No;
 }
