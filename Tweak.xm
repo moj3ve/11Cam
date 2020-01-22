@@ -11,3 +11,8 @@
     return YES;
 }
 %end
+%hook CAMCaptureCapabilities
+-(BOOL)isCTMSupportSupressed {
+    return No;
+}
+%end
