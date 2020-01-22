@@ -11,6 +11,6 @@
 }
 
 -(BOOL)isCTMSupportSupressed {
-    return No;
+    return NO;
 }
 %end
