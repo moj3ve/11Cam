@@ -14,5 +14,5 @@ ARCHS = arm64
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 after-install::
-	install.exec "killall -9 Camera"
+	install.exec "killall -9 Springboard"
 include $(THEOS_MAKE_PATH)/aggregate.mk
