@@ -6,7 +6,7 @@ iPhone 11 Camera Interface
 
 iPhone 6S - iPhone X running iOS 13 or later
 
-## To Complile
+## To Compile
 
 run 'chmod 0755 <script path>' to the postinst script
   
