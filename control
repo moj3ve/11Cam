@@ -1,6 +1,6 @@
 Package: com.michaelmelita.11cam
 Name: 11Cam
-Depends: mobilesubstrate
+Depends: mobilesubstrate, firmware (>= 13.0)
 Version: 0.0.2
 Architecture: iphoneos-arm
 Description: iPhone 11 Cam for iOS 13
