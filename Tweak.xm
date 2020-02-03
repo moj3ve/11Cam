@@ -1,15 +1,27 @@
 %hook CAMCaptureCapabilities 
--(BOOL)isCTMSupported {
+-(bool)isCTMSupported {
     return YES;
 }
--(BOOL)deviceSupportsCTM {
+-(bool)deviceSupportsCTM {
     return YES;
 }
--(BOOL)isCTMSupportSupressed {
+-(bool)isCTMSupportSupressed {
     return NO;
 }
--(bool)isDepthEffectApertureSupported {   
+-(bool)isDepthEffectApertureSupported {
 		return YES;
+}
+-(bool)isPortraitEffectIntensitySupported {           
+		return YES;
+}
+-(float)minimumPortraitEffectIntensity {
+		return 0;
+}
+-(float)maximumPortraitEffectIntensity {
+		return 100;
+}
+-(float)defaultPortraitEffectIntensity {
+		return 50;
 }
 -(bool)isLivePreviewSupportedForLightingType:(long long)arg1 devicePosition: (long long)arg2 {
 		return YES;
@@ -26,6 +38,12 @@
 %end
 
 %hook FigCaptureSourceVideoFormat
+-(BOOL)isStillImageDepthSupported {           //Check if does anything
+		return YES;
+}
+-(BOOL)isStreamingDepthSupported{            //Check if does anything   
+		return YES;
+}
 -(float)minSimulatedAperture {
 		return 1.4;
 }
@@ -34,6 +52,15 @@
 }
 -(float)defaultSimulatedAperture {
 		return 4.5;
+}
+-(float)minPortraitLightingEffectStrength {
+		return 0;
+}
+-(float)maxPortraitLightingEffectStrength {
+		return 100;
+}
+-(float)defaultPortraitLightingEffectStrength {
+		return 50;
 }
 %end
 
@@ -47,40 +74,13 @@
 -(float)defaultSimulatedAperture {
 		return 4.5;
 }
-%end
-
-%hook PUCropToolController
--(void)viewWillAppear:(BOOL)argument {
-		%orig(argument);
+-(float)minPortraitLightingEffectStrength {
+		return 0;
 }
--(void)viewWillDissappear:(BOOL)argument {
-		%orig(argument);
+-(float)maxPortraitLightingEffectStrength {
+		return 100;
 }
-%end
-
-%hook PUFiltersToolController
--(void)viewWillAppear:(BOOL)argument {
-		%orig(argument);
-}
--(void)viewWillDissappear:(BOOL)argument {
-		%orig(argument);
-}
-%end
-
-%hook PUAdjustmentsToolController
--(void)viewWillAppear:(BOOL)argument {
-		%orig(argument);
-}
--(void)viewWillDissappear:(BOOL)argument {
-		%orig(argument);
-}
-%end
-
-%hook PURedeyeToolController
--(void)viewWillAppear:(BOOL)argument {
-		%orig(argument);
-}
--(void)viewWillDissappear:(BOOL)argument {
-		%orig(argument);
+-(float)defaultPortraitLightingEffectStrength {
+		return 50;
 }
 %end
