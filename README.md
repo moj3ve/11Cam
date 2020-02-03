@@ -2,9 +2,7 @@
 
 iPhone 11 Camera Interface
 
-Depth Control with Bokeh Editing
-
-High Key Mono
+Depth and Intensity Control with High Key Mono
 
 ## Compatibility
 
