@@ -8,6 +8,9 @@
 -(bool)isCTMSupportSupressed {
     return NO;
 }
+-(bool)arePortraitEffectsSupported {
+		return YES;
+}
 -(bool)isDepthEffectApertureSupported {
 		return YES;
 }
