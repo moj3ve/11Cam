@@ -4,6 +4,8 @@ iPhone 11 Camera Interface
 
 Depth and Intensity Control with High Key Mono
 
+Portrait Lighting for iPhone 7 Plus Devices
+
 ## Compatibility
 
 iPhone X running iOS 13 or later
