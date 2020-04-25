@@ -1,12 +1,9 @@
 %hook CAMCaptureCapabilities 
--(bool)isCTMSupported {
-    return YES;
+-(long long) zoomDialStyle {
+		return 1;
 }
 -(bool)deviceSupportsCTM {
     return YES;
-}
--(bool)isCTMSupportSupressed {
-    return NO;
 }
 -(bool)arePortraitEffectsSupported {
 		return YES;
@@ -41,12 +38,6 @@
 %end
 
 %hook FigCaptureSourceVideoFormat
--(BOOL)isStillImageDepthSupported {           //Check if does anything
-		return YES;
-}
--(BOOL)isStreamingDepthSupported{            //Check if does anything   
-		return YES;
-}
 -(float)minSimulatedAperture {
 		return 1.4;
 }
