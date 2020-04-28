@@ -2,7 +2,7 @@
 -(long long) zoomDialStyle {
 		return 1;
 }
--(bool)deviceSupportsCTM {
+-(bool)isCTMSupported {
     return YES;
 }
 -(bool)arePortraitEffectsSupported {
