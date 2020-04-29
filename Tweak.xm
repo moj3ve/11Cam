@@ -57,7 +57,11 @@
 		return 50;
 }
 %end
-
+%hook CAMViewfinderViewController 
+-(BOOL)_shouldUseZoomControlInsteadOfSlider {
+    return YES;
+}
+%end
 %hook AVCaptureDeviceFormat
 -(float)minSimulatedAperture {
 		return 1.4;
