@@ -1,9 +1,9 @@
 Package: com.michaelmelita1.11cam
 Name: 11Cam Beta
-Depends: mobilesubstrate, firmware (>= 13.4), cy+model.iphone (= 10.3) | cy+model.iphone (= 10.6) | cy+model.iphone (= 11.2) | cy+model.iphone (= 11.6) | cy+model.iphone (= 11.8)
-Version: 0.0.4-1
+Depends: mobilesubstrate, firmware (>= 13.4)
+Version: 0.0.5
 Architecture: iphoneos-arm
-Description: iPhone 11 Cam for iOS 13
+Description: iPhone 11 Cam for iOS 13.4
 Maintainer: Michael Melita
 Author: Michael Melita
 Section: Tweaks
