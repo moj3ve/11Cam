@@ -8,7 +8,7 @@ export ADDITIONAL_CFLAGS = -DTHEOS_LEAN_AND_MEAN -fobjc-arc
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = 11cam
-11cam_FILES = Tweak.xm
+11cam_FILES = Tweak.x
 ARCHS = arm64 arm64e
 
 include $(THEOS_MAKE_PATH)/tweak.mk
