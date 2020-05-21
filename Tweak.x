@@ -45,6 +45,9 @@ NSInteger cameraMode;
 -(long long) zoomDialStyle {
 		return 1;
 }
+-(bool)isCTMSupported {
+    return YES;
+}
 -(double)defaultZoomFactorForMode:(long long)arg1 device:(long long)arg2 videoConfiguration:(long long)arg3 captureOrientation:(long long)arg4 {
 	return 1;
 }
@@ -56,16 +59,11 @@ NSInteger cameraMode;
 		arg1 = 1;
 		arg2 = 1;
 }
+
 -(bool)isDepthEffectApertureSupported {
 		return YES;
 }
 -(bool)isPortraitEffectIntensitySupported {
-		return YES;
-}
--(bool)isCTMSupported {
-    return YES;
-}
--(bool)arePortraitEffectsSupported {
 		return YES;
 }
 %end
