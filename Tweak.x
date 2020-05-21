@@ -48,6 +48,9 @@ NSInteger cameraMode;
 -(bool)isCTMSupported {
     return YES;
 }
+-(bool)arePortraitEffectsSupported {
+		return YES;
+}
 -(double)defaultZoomFactorForMode:(long long)arg1 device:(long long)arg2 videoConfiguration:(long long)arg3 captureOrientation:(long long)arg4 {
 	return 1;
 }
@@ -85,5 +88,10 @@ NSInteger cameraMode;
 }
 -(float)defaultPortraitLightingEffectStrength {
 		return 50;
+}
+%end
+%hook CAMViewfinderViewController 
+-(BOOL)_shouldUseZoomControlInsteadOfSlider {
+    return YES;
 }
 %end
